@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/status_icon"
+        android:layout_width="@dimen/size_xlarge"
+        android:layout_height="@dimen/size_xlarge"
+        android:src="@drawable/baseline_circle_red_700_24dp"
+        android:contentDescription="@string/device_disconnected" />
+
+    <ImageView
+        android:id="@+id/batteryStatusLabel"
+        android:layout_width="@dimen/size_xlarge"
+        android:layout_height="@dimen/size_xlarge"
+        android:src="@drawable/baseline_battery_unknown_gray_24dp"
+        android:contentDescription="@string/battery_status" />
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sourceNameLabel"
+        android:text="@string/emptyText"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/filterSourceButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:icon="@drawable/baseline_filter_alt_black_24dp"
+        android:contentDescription="@string/filter_title"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        android:enabled="false"
+        style="?attr/borderlessButtonStyle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/refreshButton"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:contentDescription="@string/refresh"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:icon="@drawable/baseline_refresh_black_24dp"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp" />
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <drawable name="ic_bt_connected">@drawable/ic_bt_connected</drawable>
+    <drawable name="status_searching">@drawable/status_searching</drawable>
+</resources>
