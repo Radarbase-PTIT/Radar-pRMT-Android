@@ -29,6 +29,7 @@
         android:xlargeScreens="true" />
 
     <application
+        android:usesCleartextTraffic="true"
         android:name=".RadarApplicationImpl"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"

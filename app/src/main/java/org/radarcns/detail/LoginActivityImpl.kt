@@ -311,7 +311,7 @@ class LoginActivityImpl : LoginActivity(), NetworkConnectedReceiver.NetworkConne
                     if (baseUrl.endsWith("/")) {
                         baseUrl = baseUrl.substring(0, baseUrl.length - 1)
                     }
-                    val url = "https://$baseUrl/managementportal/api/meta-token/${tokenInput.editText?.text}"
+                    val url = "http://$baseUrl/managementportal/api/meta-token/${tokenInput.editText?.text}"
                     try {
                         mpManager.setTokenFromUrl(authState, url)
                         dialog.dismiss()

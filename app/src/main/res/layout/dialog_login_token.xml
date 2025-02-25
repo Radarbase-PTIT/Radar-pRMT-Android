@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/size_small"
-            app:prefixText="https://"
+            app:prefixText="http://"
             android:hint="@string/label_base_url"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
