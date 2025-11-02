@@ -67,8 +67,8 @@ configurations.all {
 
 repositories {
     flatDir { dirs "libs" }
-    google()
     mavenLocal()
+    google()
     mavenCentral()
     jcenter()
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
@@ -125,9 +125,12 @@ dependencies {
     implementation ("org.radarbase:radar-android-faros:$radar_commons_android_version") {
         exclude group: 'org.radarbase', module: 'radar-commons-android'
     }
-//    implementation ("org.radarbase:radar-android-polar:$radar_commons_android_version"){
-//        exclude group: 'org.radarbase', module: 'radar-commons-android'
-//    }
+
+    //polar h10
+    implementation ("org.radarbase:radar-android-polar:$radar_commons_android_version") {
+        exclude group: 'org.radarbase', module: 'radar-commons-android'
+    }
+
     implementation ("org.radarbase:radar-android-google-sleep:$radar_commons_android_version"){
         exclude group: 'org.radarbase', module: 'radar-commons-android'
     }
