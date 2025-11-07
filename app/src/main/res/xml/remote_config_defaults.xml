@@ -19,19 +19,19 @@
 <defaultsMap>
     <entry>
         <key>management_portal_url</key>
-        <value>http://192.168.102.29/managementportal/</value>
+        <value>http://192.168.102.16/managementportal/</value>
     </entry>
     <entry>
         <key>kafka_rest_proxy_url</key>
-        <value>http://192.168.102.29/kafka/</value>
+        <value>http://192.168.102.16/kafka/</value>
     </entry>
     <entry>
         <key>schema_registry_url</key>
-        <value>http://192.168.102.29/schema/</value>
+        <value>http://192.168.102.16/schema/</value>
     </entry>
     <entry>
         <key>unsafe_kafka_connection</key>
-        <value>false</value>
+        <value>true</value>
     </entry>
     <entry>
         <key>send_only_with_wifi</key>
@@ -68,11 +68,11 @@
     </entry>
     <entry>
         <key>oauth2_authorize_url</key>
-        <value>http://192.168.102.29/managementportal/oauth/authorize</value>
+        <value>http://192.168.102.16/managementportal/oauth/authorize</value>
     </entry>
     <entry>
         <key>oauth2_token_url</key>
-        <value>http://192.168.102.29/managementportal/oauth/token</value>
+        <value>http://192.168.102.16/managementportal/oauth/token</value>
     </entry>
     <entry>
         <key>oauth2_client_id</key>

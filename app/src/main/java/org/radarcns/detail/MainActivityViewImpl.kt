@@ -22,11 +22,13 @@ import android.widget.*
 import androidx.appcompat.widget.Toolbar
 import org.radarbase.android.IRadarBinder
 import org.radarbase.android.MainActivityView
+import org.radarbase.android.RadarApplication.Companion.radarConfig
 import org.radarbase.android.source.SourceProvider
 import org.radarbase.android.util.ChangeApplier
 import org.radarbase.android.util.ChangeRunner
 import org.radarbase.android.util.TimedLong
 import org.radarbase.android.widget.repeatAnimation
+import org.radarcns.detail.LoginActivityImpl.Companion
 import org.slf4j.LoggerFactory
 import java.text.SimpleDateFormat
 import java.util.*
